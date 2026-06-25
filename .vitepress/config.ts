@@ -7,8 +7,9 @@ export default defineConfig({
   lang: 'zh-CN',
   // 把子项目里的 markdown 路径重写为干净的 URL
   // database/redis-lettuce-course/redis-lettuce/ch1-intro.md → /redis-lettuce/ch1-intro
+  // 注意：目标路径不能带前导 /，VitePress 内部会自动补
   rewrites: {
-    'database/redis-lettuce-course/redis-lettuce/:path': '/redis-lettuce/:path'
+    'database/redis-lettuce-course/redis-lettuce/:path': 'redis-lettuce/:path'
   },
   themeConfig: {
     siteTitle: 'Interactive Tutorials',
