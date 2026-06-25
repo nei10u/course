@@ -1,0 +1,19 @@
+{
+  "name": "interactive-tutorials",
+  "version": "0.1.0",
+  "private": true,
+  "description": "给程序员的交互式技术课程",
+  "workspaces": [
+    "database/*",
+    "messaging/*",
+    "search/*",
+    "rpc/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace database/redis-lettuce-course",
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "dev:lettuce": "npm run dev --workspace database/redis-lettuce-course"
+  }
+}
