@@ -8,7 +8,7 @@
 
 | 领域 | 课程 | 状态 |
 |------|------|------|
-| **database/** | [Redis Lettuce 交互式可视化课程](./database/redis-lettuce-course/) | ✅ 已上线（10 章 + 12 个交互演示器） |
+| **database/** | [Redis Lettuce 交互式可视化课程](./database/redis-lettuce-course/README.md) | ✅ 已上线（10 章 + 12 个交互演示器） |
 | messaging/ | Apache Kafka | 规划中 |
 | search/ | Elasticsearch | 规划中 |
 | rpc/ | gRPC + Protobuf | 规划中 |
