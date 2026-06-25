@@ -5,6 +5,11 @@ export default defineConfig({
   title: 'Interactive Tutorials',
   description: '给程序员的交互式技术课程',
   lang: 'zh-CN',
+  // 把子项目里的 markdown 路径重写为干净的 URL
+  // database/redis-lettuce-course/redis-lettuce/ch1-intro.md → /redis-lettuce/ch1-intro
+  rewrites: {
+    'database/redis-lettuce-course/redis-lettuce/:path': '/redis-lettuce/:path'
+  },
   themeConfig: {
     siteTitle: 'Interactive Tutorials',
     sidebar: [
@@ -46,14 +51,6 @@ export default defineConfig({
           button: { buttonText: '搜索', buttonAriaLabel: '搜索' },
           modal: { noResultsText: '无结果' }
         }
-      }
-    }
-  },
-  vite: {
-    resolve: {
-      alias: {
-        '@mock': new URL('./../mock', import.meta.url).pathname,
-        '@components': new URL('./../components', import.meta.url).pathname
       }
     }
   }

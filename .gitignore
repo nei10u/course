@@ -7,18 +7,16 @@ node_modules/
 # 见 https://github.com/npm/cli/issues/4828
 package-lock.json
 npm-shrinkwrap.json
-# pnpm / yarn 用户若改用其他包管理器，也忽略它们的 lockfile
 pnpm-lock.yaml
 yarn.lock
 
-# === VitePress 构建产物 ===
-.vitepress/dist/
-.vitepress/cache/
+# === 构建产物 ===
+dist/
+build/
 
 # === 日志 ===
 *.log
 logs/
-npm-debug.log*
 
 # === OS ===
 .DS_Store
@@ -30,17 +28,3 @@ Thumbs.db
 .vscode/
 !.vscode/settings.json
 !.vscode/extensions.json
-*.iml
-
-# === 环境/密钥 ===
-.env
-.env.local
-.env.*.local
-!.env.example
-
-# === TypeScript 增量编译缓存 ===
-*.tsbuildinfo
-
-# === Vitest 临时 ===
-coverage/
-.vitest-cache/

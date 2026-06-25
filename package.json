@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "description": "给程序员的交互式技术课程",
+  "type": "module",
   "workspaces": [
     "database/*",
     "messaging/*",
@@ -10,10 +11,21 @@
     "rpc/*"
   ],
   "scripts": {
-    "dev": "npm run dev --workspace database/redis-lettuce-course",
-    "build": "npm run build --workspaces --if-present",
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview",
     "test": "npm run test --workspaces --if-present",
-    "typecheck": "npm run typecheck --workspaces --if-present",
-    "dev:lettuce": "npm run dev --workspace database/redis-lettuce-course"
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@vitejs/plugin-vue": "^5.0.0",
+    "@vue/test-utils": "^2.4.5",
+    "jsdom": "^24.0.0",
+    "typescript": "^5.3.0",
+    "vitepress": "^1.0.0-rc.31",
+    "vitest": "^1.0.0",
+    "vue": "^3.4.0",
+    "vue-tsc": "^2.0.0"
   }
 }

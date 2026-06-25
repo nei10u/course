@@ -5,10 +5,6 @@ hero:
   name: "Interactive Tutorials"
   text: "给程序员的交互式技术课程"
   tagline: 每个概念都配可视化演示器，看见"看不见的东西"——时序、并发、空间分布、数据流。
-  actions:
-    - theme: brand
-      text: 进入 Redis Lettuce 课程 →
-      link: /redis-lettuce/ch1-intro
 
 features:
   - title: 可视化时序
